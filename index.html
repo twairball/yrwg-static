@@ -1,0 +1,297 @@
+<html>
+
+<head>
+<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://libs.baidu.com/fontawesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+<!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
+<style>
+h1.huge{font-size:70px;}
+.jumbotron.bg-image {
+	color: #E3E3E3;
+	background-color: #004E57;
+	background-position: 50% 50%; 
+	background-size: cover; 
+	padding-bottom: 100px;
+	margin-bottom: 0;}	
+.bg-duck {background-image: url('img/ducks.png'); }
+.bg-goose {background-image: url('img/goose.png'); }
+.bg-shanghai-blue {background-image: url('img/shanghai_blue.png'); }
+.bg-steam {background-image: url('img/steam.png');}
+.bg-office {background-image: url('img/office.jpg');}
+
+.bg-primary {background-color: #004E57; color: #E3E3E3;}
+.bg-primary-trans{background-color: rgba(0,78,87,0.6); color: #E3E3E3;}
+.bg-fixed {background-attachment: fixed; background-repeat: no-repeat; background-size: cover;}
+
+.btn-outline{color: #004E57; background-color: transparent; border-color: #004E57;}
+.btn-outline:hover,.btn-outline:focus,
+.btn-outline:active{color:#fff	;text-shadow:none;background-color:#004E57;border-color:#004E57;}
+.btn-outline-inverse {color: #fff; background-color: transparent; border-color: #fff;}
+.btn-outline-inverse:hover,.btn-outline-inverse:focus,
+.btn-outline-inverse:active{color:#00626E;text-shadow:none;background-color:#fff;border-color:#fff}
+
+/*.card-white {background-color: #fff; color: #333;*/
+ /*padding-top: 30px; */
+ /*padding-bottom: 30px; */
+ /*margin: 20px 0 auto 0;*/
+/*}*/
+.logo-outline-inverse {display:inline-block;
+	margin: 40px; padding: 5px; 
+	min-width: 150px; min-height: 150px;
+	color: #fff; font-size: 2em; line-height: 1.69em;
+	background-color: transparent; border: 10px solid #E3E3E3; border-radius: 17px;  }
+.logo-outline-inverse.emerald {
+	color: #009E64;
+	border-color: #009E64;
+}
+
+img.qr-code {width: 150px;}
+div.qr-code{margin: 20px;}
+.qr-code > .caption {font-size: 13px;}
+.qr-code{visibility: hidden; height: 0;}
+.left-split{text-align: center;}
+.right-split{
+	text-align: center; 
+	/*visibility: hidden; height: 0;*/
+}
+.cta-buttons > .btn {width: 100%; margin-top: 5px;}
+@media (min-width: 321px) and (max-width: 1199px) {
+	/*.right-split{text-align: center; visibility: visible; height: auto;}*/
+	.qr-code{visibility: visible; height: auto;}
+	.cta-buttons > .btn {width: auto; margin-top: auto;}
+}
+@media (min-width: 1200px){
+	.left-split{text-align: right; }
+	.right-split{text-align: left; 
+		/*visibility: visible; height: auto; */
+		border-left: 1px solid #fff;}
+	.qr-code{visibility: visible;height: auto;}
+	.cta-buttons > .btn {width: auto; margin-top: auto;}
+}
+div.features {margin: 50px auto;}
+
+.btn-primary{
+	background-color: #f26432;
+	border-color: #f26432;
+}
+.btn-primary:hover {
+	background-color: #af421b;
+	border-color: #af421b;
+}
+/*.list-def{font-weight: 700; display: inline-block; text-align: right; margin-right: 5px;}*/
+.inner-container{margin: 50px auto;}
+
+li.checklist {padding-left: 1.2em;}
+li.checklist:before {
+	content: "\f00c";
+	font-family: FontAwesome; /* or whatever */
+	display: inline-block;
+ 	margin-left: -1.2em; /*same as padding-left set on li*/
+ 	width: 1.2em; /*same as padding-left set on li*/
+}
+footer{
+	color: #E3E3E3;
+	background-color: #004E57;
+}
+/*footer > div.container {padding-top: 20px; padding-bottom: 20px;}*/
+</style>
+
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<div class="jumbotron bg-image bg-shanghai-blue">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="logo-outline-inverse">
+					羽绒<br>
+					微购
+				</div>
+				<p class="tagline">库存是资金，赶紧采取流量式的微采购！</p>
+			</div><!-- col-lg-12 -->
+		</div><!-- row -->
+<!-- 		<div class="row">
+			<div class="col-xs-12 col-md-6 col-lg-6 left-split">
+
+				<h2>白鸭绒 90% x 50kg</h2>
+				<h3>最新价格：¥445/kg</h3>
+
+				<button type="button" class="btn btn-outline-inverse btn-lg">
+					店铺购买
+				</button>					
+
+			</div>
+
+			<div class="col-xs-12 col-md-6 col-lg-6 right-split">
+				<div class="qr-code">
+					<img src="img/weixin_qr_code.jpeg" class="qr-code"/>
+					<p class="caption">扫描羽绒微购二维码，联系客服查询</p>
+				</div>
+				<div>
+				<a href="weixin://qr/gh_827164acdc51" class="btn btn-primary btn-lg cta-btn" style="">
+					关注微信 @羽绒微购
+				</a></div>
+			</div>
+		</div> -->
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				
+				<div class="product">
+					<h2>白鸭绒 90% x 50kg</h2>
+					<h3>最新价格：¥445/kg</h3>
+				</div>
+				<div class="qr-code">
+					<img src="img/weixin_qr_code.jpeg" class="qr-code"/>
+					<p class="caption">扫描二维码,上微信联络</p>
+				</div>
+
+				<div class="cta-buttons">
+					<a href="weixin://qr/gh_827164acdc51" class="btn btn-primary btn-lg cta-btn" style="">
+						关注微信 @羽绒微购
+					</a>
+					<a href="#shop" class="btn btn-outline-inverse btn-lg">
+						店铺购买
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12 text-center">
+
+			</div><!-- col -->
+		</div><!-- row -->
+	</div><!-- container -->
+	</div><!-- jumbotron -->
+
+	<div class="features">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 text-center">
+				<p><i class="fa fa-group fa-5x"></i></p>
+				<h2>手机时代的服务</h2>
+				随时线上联络客服，马上提供最新价格
+	<!-- 			<ul class="list-inline">
+					<li>QQ: 992939329</li>
+					<li>微信: kefu_yrweigou</li>
+				</ul> -->
+				<ul class="list-unstyled">
+					<li>QQ:  992939329</li>
+					<li>微信: kefu_yrweigou</li>
+				</ul>
+<!-- 				<dl class="dl-horizontal">
+				<dt>QQ:</dt>
+				<dd>992939329</dd>
+				<dt>微信:</dt>
+				<dd>kefu_yrweigou</dd>
+				</dl> -->
+			</div>
+			<div class="col-lg-4 text-center">
+				<p><i class="fa fa-truck fa-5x"></i></p>
+				<h2>含税包运，当天出货</h2>
+				<p>羽绒微购就是50kg！拒绝大量起订量，拒绝放库存，需要时马上再订货</p>
+				<a href="#shop" class="btn btn-outline btn-lg">
+					店铺购买
+				</a>	
+			</div>
+			<div class="col-lg-4 text-center">
+				<p><i class="fa fa-tachometer fa-5x"></i></p>
+				<h2>品质控制</h2>
+				微购50kg一样得到大规模工厂的品质管制，每批货都有二维码追踪订单，自助式查询检验报告，小批量也可以得到大货订单的品质控制
+			</div>
+		</div><!-- row -->
+	</div><!-- container -->
+	</div><!-- features -->
+
+	<div class="bg-image bg-duck bg-fixed" style="height: 320px;">
+
+	</div><!-- bg-image -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="inner-container">
+				<h1 class="huge">优良品质</h1>
+				<ul class="list-unstyled">
+					<li><h3>白鸭绒 90%</h3></li>
+					<li>
+						国标 GB/T 14272-2011 
+						<a href="#about-guobiao" class="abbr small about-link">[标准解释]</a>
+					</li>
+					<li>
+						蓬松度 630oz/in3
+						<a href="#about-fill-power" class="abbr small about-link">[参考填充量]</a>
+					</li>
+				</ul>
+
+				<p><h4>制造优良羽绒服装应该冲什么羽绒？</h4>
+				不要再怀疑了，羽绒微购提供25年的羽绒贸易经验，
+				只推荐优等品质＋高性价比的羽绒品质，保证检验合格也同时保证客户满意。</p>
+
+				<p><h4>品质是为了谁?</h4>
+				当然是为了消费者满意，客人认同服装的品质才能认同您的品牌。羽绒微购提供不断的品质测试及研究，成为您的羽绒品质搭档</p>
+				</div><!-- inner-container -->
+			</div><!-- col -->
+		</div><!-- row -->
+	</div><!-- container -->
+	
+
+	<div class="bg-image bg-steam bg-fixed" style="height: 320px;">
+
+	</div><!-- bg-image -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="inner-container">
+				<h1 class="huge">大规模工厂服务</h1>
+				<p>要创造优良品牌就必须要优良品质控制呢。
+				不要因为订单小而得不到您品牌需要的生产管制，再也不要被”起订量“这三个字而放弃你对品质的坚决！</p>
+
+				<ul class="list-inline">
+					<li class="checklist">注册资金>1亿</li>
+					<li class="checklist">中国羽绒协会</li>
+					<li class="checklist">IDFL 国际羽绒协会</li>
+					<li class="checklist">ISO-9001 国际质量体系</li>
+					<li class="checklist">Oeko-Tex 瑞士环保型生态</li>
+				</ul>
+				<a href="#about-factory" class="btn btn-outline btn-lg">关于浙江华兴羽绒工厂</a>
+				</div><!-- inner-container-->
+			</div><!-- col -->
+		</div><!-- row -->
+	</div><!-- container -->
+	</div><!-- jumbotron -->
+
+	<div class="bg-image bg-office bg-fixed" style="height: 320px;">
+
+	</div><!-- bg-image -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4" style="padding-top: 20px; padding-bottom: 20px;">
+			客服服务<br>
+			微信: kefu_yrweigou<br>
+			邮箱: hello@yurongweigou.com<br>
+			电话: 021-51103191<br>
+			QQ: 292931849<br>
+			</div>
+
+			<div class="col-lg-4" style="padding-top: 20px; padding-bottom: 20px;">
+			厂商合作<br>
+			邮箱: bd@yurongweigou.com<br>
+			</div>
+
+			<div class="col-lg-4" style="padding-top: 20px; padding-bottom: 20px;">
+			加入我们团队！<br>
+			邮箱: hr@yurongweigou.com<br>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+</body>
+</html>
