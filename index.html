@@ -34,6 +34,9 @@ h1.huge{font-size:70px;}
 .bg-primary {background-color: #004E57; color: #E3E3E3;}
 .bg-primary-trans{background-color: rgba(0,78,87,0.6); color: #E3E3E3;}
 .bg-fixed {background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;}
+@media (max-width: 320px) {
+	.bg-fixed { height: 320px; width: 100%; background-size: auto; background-attachment: scroll;}
+}
 
 .btn-outline{color: #004E57; background-color: transparent; border-color: #004E57;}
 .btn-outline:hover,.btn-outline:focus,
