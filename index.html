@@ -50,7 +50,8 @@ h1.huge{font-size:70px;}
  /*padding-bottom: 30px; */
  /*margin: 20px 0 auto 0;*/
 /*}*/
-.logo-outline-inverse {display:inline-block;
+.logo-outline-inverse {
+	display:inline-block;
 	margin: 40px; padding: 5px; 
 	min-width: 150px; min-height: 150px;
 	color: #fff; font-size: 2em; line-height: 1.69em;
@@ -64,7 +65,7 @@ img.qr-code {width: 150px;}
 div.qr-code{margin: 20px;}
 .qr-code > .caption {font-size: 13px;}
 .qr-code{visibility: hidden; height: 0;}
-.left-split{text-align: center;}
+.left-split{text-align: center; margin-bottom: 40px;}
 .right-split{
 	text-align: center; 
 	/*visibility: hidden; height: 0;*/
@@ -73,7 +74,7 @@ div.qr-code{margin: 20px;}
 @media (min-width: 321px) and (max-width: 1199px) {
 	/*.right-split{text-align: center; visibility: visible; height: auto;}*/
 	.qr-code{visibility: visible; height: auto;}
-	.cta-buttons > .btn {width: auto; margin-top: auto;}
+	.cta-buttons > .btn {width: auto; margin-top: 10px; min-width: 150px;}
 }
 @media (min-width: 1200px){
 	.left-split{text-align: right; }
@@ -81,7 +82,7 @@ div.qr-code{margin: 20px;}
 		/*visibility: visible; height: auto; */
 		border-left: 1px solid #fff;}
 	.qr-code{visibility: visible;height: auto;}
-	.cta-buttons > .btn {width: auto; margin-top: auto;}
+	.cta-buttons > .btn {width: auto; margin-top: 40px; min-width: 150px;}
 }
 div.features {margin: 50px auto;}
 
@@ -104,6 +105,9 @@ li.checklist:before {
  	margin-left: -1.2em; /*same as padding-left set on li*/
  	width: 1.2em; /*same as padding-left set on li*/
 }
+
+li.bullet > span.bullet-left {width: 65px; float: left;}
+li.bullet > span.bullet-right {margin-left: 65px;}
 footer{
 	color: #E3E3E3;
 	background-color: #004E57;
@@ -119,6 +123,9 @@ footer{
 	    url('font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 	    url('font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 	}
+	.iconfont{font-family:"iconfont";font-size:16px;font-style:normal;}
+	.iconfont.sm{font-size: 12px;}
+	.iconfont.lg{font-size:24px;}
 </style>
 </head>
 <body>
@@ -134,51 +141,60 @@ footer{
 				<p class="tagline">库存是资金，赶紧采取流量式的微购！</p>
 			</div><!-- col-lg-12 -->
 		</div><!-- row -->
-<!-- 		<div class="row">
+		<div class="row">
 			<div class="col-xs-12 col-md-6 col-lg-6 left-split">
 
 				<h2>白鸭绒 90% x 50kg</h2>
 				<h3>最新价格：¥445/kg</h3>
 
-				<button type="button" class="btn btn-outline-inverse btn-lg">
-					店铺购买
-				</button>					
-
+				<div class="cta-buttons">
+					<a href="//yurongweigou.1688.com" class="btn btn-outline-inverse btn-lg">进入店铺</a>				
+				</div>
 			</div>
 
 			<div class="col-xs-12 col-md-6 col-lg-6 right-split">
 				<div class="qr-code">
 					<img src="img/weixin_qr_code.jpeg" class="qr-code"/>
 					<p class="caption">扫描羽绒微购二维码，联系客服查询</p>
+
+					<div class="guanzhu">
+						<div ><i class="iconfont lg">&#x343b;</i>微信: yurongwg</div>
+						<div ><i class="iconfont lg">&#xf01c7;</i>QQ: 1919350858</div>
+					</div>
 				</div>
-				<div>
-				<a href="weixin://qr/gh_827164acdc51" class="btn btn-primary btn-lg cta-btn" style="">
-					关注微信 @羽绒微购
-				</a></div>
+				
 			</div>
-		</div> -->
-		<div class="row">
+		</div>
+
+<!-- 		<div class="row">
 			<div class="col-lg-12 text-center">
 				
 				<div class="product">
-					<h2>白鸭绒 90% x 50kg</h2>
+					<h2>白鸭绒 90%</h2>
 					<h3>最新价格：¥445/kg</h3>
 				</div>
+
+				<div class="guanzhu">
+					<div ><i class="iconfont lg">&#x343b;</i>微信: yurongwg</div>
+					<div ><i class="iconfont lg">&#xf01c7;</i>QQ: 1919350858</div>
+				</div>
+
 				<div class="qr-code">
 					<img src="img/weixin_qr_code.jpeg" class="qr-code"/>
-					<p class="caption">更多羽绒信息，扫描微信账号</p>
+					<p class="caption">扫描羽绒微购微信</p>
 				</div>
 
 				<div class="cta-buttons">
+					
 					<a href="weixin://qr/gh_827164acdc51" class="btn btn-primary btn-lg cta-btn" style="">
-						关注微信 @羽绒微购
+						关注微信 yurongwg
 					</a>
-					<a href="//yurongwei购.1688.com" class="btn btn-outline-inverse btn-lg">
+					<a href="//yurongweigou.1688.com" class="btn btn-outline-inverse btn-lg">
 						进入店铺
 					</a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="row">
 			<div class="col-lg-12 text-center">
@@ -195,17 +211,21 @@ footer{
 				<p><i class="fa fa-group fa-5x"></i></p>
 				<h2>手机时代的服务</h2>
 				随时线上联络客服，马上提供最新价格
-				</ul> -->
 				<ul class="list-unstyled">
-					<li>QQ:  1919350858</li>
-					<li>微信: yurongweigou</li>
+					<li>
+						<i class="iconfont ">&#x343b;</i>微信: yurongwg
+					</li>
+					<li>
+						<i class="iconfont ">&#xf01c7;</i>QQ: 1919350858
+					</li>
+					
 				</ul>
 			</div>
 			<div class="col-lg-4 text-center">
 				<p><i class="fa fa-truck fa-5x"></i></p>
 				<h2>含税包运，当天出货</h2>
 				<p>羽绒微购就是50kg！拒绝大量起订量，拒绝放库存，需要时马上再订货</p>
-				<a href="//yurongwei购.1688.com" class="btn btn-outline btn-lg">
+				<a href="//yurongweigou.1688.com" class="btn btn-outline btn-lg">
 					进入店铺
 				</a>	
 			</div>
@@ -219,34 +239,41 @@ footer{
 	</div><!-- features -->
 
 	<div class="bg-image bg-duck bg-fixed" style="height: 320px;">
+			<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="bg-primary-trans" style="width: 280px; border-radius: 5px; 
+					margin: 40px auto; padding: 40px 25px;">
 
+					<h2>白鸭绒 90%</h2>
+					<h4>国标 GB/T 14272-2011</h4>
+					<!-- <a href="#about-guobiao" class="abbr small about-link">[标准解释]</a> -->
+					<h4>蓬松度 630mm</h4>
+					<!-- <a href="#about-fill-power" class="abbr small about-link">[参考填充量]</a> -->
+				</div>
+			</div><!-- col-lg-12 -->
+		</div><!-- row -->
+	</div><!-- container-->
 	</div><!-- bg-image -->
 
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<div class="inner-container">
 				<h1 class="huge">优良品质</h1>
-				<ul class="list-unstyled">
-					<li><h3>白鸭绒 90%</h3></li>
-					<li>
-						国标 GB/T 14272-2011 
-						<a href="#about-guobiao" class="abbr small about-link">[标准解释]</a>
-					</li>
-					<li>
-						蓬松度 630mm
-						<a href="#about-fill-power" class="abbr small about-link">[参考填充量]</a>
-					</li>
-				</ul>
-
-				<p><h4>制造优良羽绒服装应该冲什么羽绒？</h4>
+			</div>
+		</div><!-- row -->
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="inner-container">
+				<p class="lead">
 				不要再怀疑了，羽绒微购提供25年的羽绒贸易经验，
 				只推荐优等品质＋高性价比的羽绒品质，保证检验合格也同时保证客户满意。</p>
 
-				<p><h4>品质是为了谁?</h4>
-				当然是为了消费者满意，客人认同服装的品质才能认同您的品牌。羽绒微购提供不断的品质测试及研究，成为您的羽绒品质搭档</p>
+				<p class="lead">
+				品质是为了消费者满意，客人认同服装的品质才能认同您的品牌。羽绒微购提供不断的品质测试及研究，成为您的羽绒品质搭档</p>
 				</div><!-- inner-container -->
 			</div><!-- col -->
+			<div class="col-lg-2"></div>
 		</div><!-- row -->
 	</div><!-- container -->
 	
@@ -285,10 +312,10 @@ footer{
 		<div class="row">
 			<div class="col-lg-4" style="padding-top: 20px; padding-bottom: 20px;">
 			客服服务<br>
-			微信: yurongweigou<br>
+			微信: yurongwg<br>
+			QQ: 1919350858<br>
 			邮箱: hello@yurongweigou.com<br>
 			电话: 021-51103191<br>
-			QQ: 1919350858<br>
 			</div>
 
 			<div class="col-lg-4" style="padding-top: 20px; padding-bottom: 20px;">
